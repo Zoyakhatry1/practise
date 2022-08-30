@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import './App.scss';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <div className="container1">
+         <div className="box1">Positioned respect to container-1</div>
+      </div>
+      <div className="container2">
+         <div className="box2">positioned respect to initial position of box2</div>
+      </div>
+      <div className="container3">
+         <div className="box3">positioned respect to container-3 which itself is positioned with respect to body.</div>
+      </div>
+      <div className="container4">
+         <div className="box4">positioned with respect to body.</div>
+      </div>
     </div>
-  );
+  )
 }
 
 export default App;
