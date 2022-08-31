@@ -1,0 +1,15 @@
+.container{
+    overflow-x: scroll;
+    overflow-y:hidden ;
+    width: 600px;
+    height:200px ;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    .box{
+        height:250px;
+        width:800px;
+        background-color: rgb(80, 163, 201);
+    }
+}
